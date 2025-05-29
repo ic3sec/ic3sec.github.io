@@ -1,0 +1,3 @@
+[submodule "themes/LoveIt-Lite"]
+	path = themes/LoveIt-Lite
+	url = https://github.com/ic3sec/LoveIt-Lite.git
