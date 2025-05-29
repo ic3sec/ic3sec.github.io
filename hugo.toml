@@ -3,7 +3,7 @@ baseURL = "https://ic3sec.github.io/"
 # theme
 theme = "LoveIt-Lite"
 # themes directory
-themesDir = "../.."
+themesDir = "themes"
 
 # website title
 title = "ic3sec"
