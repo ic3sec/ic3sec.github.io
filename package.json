@@ -1,0 +1,42 @@
+{
+  "name": "loveit-lite-src",
+  "version": "0.0.1",
+  "description": "LoveIt-Lite theme source file",
+  "private": true,
+  "devDependencies": {
+    "@babel/cli": "^7.27.0",
+    "@babel/core": "^7.26.9",
+    "@babel/preset-env": "^7.26.9",
+    "core-js": "^3.40.0",
+    "husky": "^9.1.7"
+  },
+  "scripts": {
+    "preinstall": "npx npm-force-resolutions",
+    "prepare": "install --save-dev husky",
+    "compile": "npx babel src/js --out-file assets/js/theme.js",
+    "hugo": "hugo --buildDrafts --gc",
+    "hugo-development": "hugo --buildDrafts --gc --minify --environment development",
+    "hugo-production": "hugo --gc --minify --environment production",
+    "hugo-clean-development": "hugo --cleanDestinationDir --buildDrafts --gc --minify --environment development",
+    "hugo-clean-production": "hugo --cleanDestinationDir --gc --minify --environment production",
+    "hugo-server": "hugo server --buildDrafts --disableFastRender",
+    "hugo-server-development": "hugo server --buildDrafts --disableFastRender --environment development",
+    "hugo-server-production": "hugo server --minify --disableFastRender --environment production",
+    "htmlproofer": "htmlproofer /public --disable-external true --ignore-missing-alt true",
+    "copy-resources": "cp -rf /resources ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ic3sec/LoveIt-Lite.git"
+  },
+  "keywords": [
+    "hugo",
+    "theme"
+  ],
+  "author": "Ic3Sec",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ic3sec/LoveIt-Lite/issues"
+  },
+  "homepage": "https://github.com/ic3sec/LoveIt-Lite#readme"
+}
