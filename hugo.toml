@@ -6,7 +6,7 @@ theme = "LoveIt-Lite"
 themesDir = "themes"
 
 # website title
-title = "ic3sec"
+title = "ic3sec Blog | CTF Writeups, Malware Analysis and Dev Logs"
 
 # determines default content language ["en"]
 defaultContentLanguage = "en"
@@ -85,7 +85,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [params.author]
     name = "ic3sec"
     email = ""
-    link = ""
+    link = "https://github.com/ic3sec/"
 
   # Header config
   [params.header]
@@ -468,22 +468,14 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         title = ""
       [[languages.en.menu.main]]
         weight = 4
-        identifier = "documentation"
-        pre = ""
-        post = ""
-        name = "Docs"
-        url = "/categories/documentation/"
-        title = ""
-      [[languages.en.menu.main]]
-        weight = 5
         identifier = "about"
         pre = ""
         post = ""
-        name = "About"
+        name = "About Me"
         url = "/about/"
         title = ""
       [[languages.en.menu.main]]
-        weight = 6
+        weight = 5
         identifier = "github"
         pre = "<svg class='icon github icon-github' aria-hidden='true'><use href='#icon-github'></use></svg>"
         post = ""
@@ -506,7 +498,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
           enable = true
           avatarURL = "/images/avatar.png"
           title = ""
-          subtitle = "A Clean, Elegant but Advanced Hugo Theme"
+          subtitle = "CTF Writeups, Malware Analysis and Dev Logs"
           typeit = true
           social = true
           disclaimer = ""
