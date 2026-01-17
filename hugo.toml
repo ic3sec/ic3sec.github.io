@@ -75,9 +75,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # date format
   dateFormat = "2006-01-02"
   # website title for Open Graph and Twitter Cards
-  title = "LoveIt-Lite"
+  title = "ic3sec Writeups"
   # website description for RSS, SEO, Open Graph and Twitter Cards
-  description = "Hugo theme - LoveIt-Lite"
+  description = "ic3sec CTF Writeups, Malware Analysis and Dev Logs"
   # website images for Open Graph and Twitter Cards
   images = ["/logo.png"]
 
@@ -480,7 +480,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         pre = "<svg class='icon github icon-github' aria-hidden='true'><use href='#icon-github'></use></svg>"
         post = ""
         name = ""
-        url = "https://github.com/ic3sec/LoveIt-Lite"
+        url = "https://github.com/ic3sec"
         title = "GitHub"
     [languages.en.params]
       [languages.en.params.search]
