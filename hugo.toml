@@ -307,7 +307,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       images = []
       # Publisher info
       [params.page.seo.publisher]
-        name = "xxxx"
+        name = "ic3sec"
         logoUrl = "/images/avatar.png"
 
   # TypeIt config
@@ -503,6 +503,5 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
           social = true
           disclaimer = ""
       [languages.en.params.social]
-        GitHub = "xxxx"
-        Youtubelegacy = "xxxx"
+        GitHub = "ic3sec"
         RSS = true
