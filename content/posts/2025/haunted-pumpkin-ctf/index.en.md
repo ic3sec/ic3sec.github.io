@@ -85,7 +85,7 @@ hpCTF{Perugia Silvestrini}
 >
 >Flag Example: hpCTF{19900615}
 >
->Challenge image: ![My Identity](001_my_identity.png)
+>Challenge Image: ![My Identity](001_my_identity.png)
 
 We've been tasked with finding the birth date of the grave raider in the image.
 
@@ -151,7 +151,7 @@ hpCTF{no}
 >
 >Flag Format: hpCTF{IMO_nr}
 >
->Challenge image: ![Ghost Ship](001_ghost_ship.png)
+>Challenge Image: ![Ghost Ship](001_ghost_ship.png)
 
 We've been tasked with finding the IMO number of the ship in the image.
 
@@ -171,7 +171,7 @@ hpCTF{7432305}
 
 ### Ghost Ship - 2
 ---
->Can you also find out where the ship currently is ?
+>Can you also find out where the ship currently is?
 
 Let's find out.
 
@@ -339,7 +339,7 @@ hpCTF{6003_Luzern_Sagenmattstrasse_7}
 >
 >Flag Format: hpCTF{**** *** ***-*****}
 >
->Challenge image: ![Fake News](001_fake_news.png)
+>Challenge Image: ![Fake News](001_fake_news.png)
 
 {{< admonition type=abstract title="Steps" open=false >}}
 1. Reverse searching the right side of the image brings up articles with images of another person (https://info.51.ca/articles/1005978)
@@ -347,10 +347,6 @@ hpCTF{6003_Luzern_Sagenmattstrasse_7}
 2. Translating the headline of the article above gives us the partial name "Law Wai-kwong", but this doesn't quite match the flag format
 3. Google searching with the partial name returns results with the full name (our flag) and confirms the article image we found earlier
 ![Google Search Result](003_fake_news.png)
-{{< /admonition >}}
-
-{{< admonition type=tip title="Thought Process/Retrospect" open=false >}}
-
 {{< /admonition >}}
 
 {{< admonition type=warning title="Flag" open=false >}}
@@ -377,30 +373,50 @@ hpCTF{46}
 
 ### The Distress Call
 ---
+>Help! What's the tail number of the flight that went down?
+>
+>Flag Format: hpCTF{\<tailNumber\>}
+>
+>[Challenge File](SOS.mkv)
+
+Mayday, Mayday!
 
 {{< admonition type=abstract title="Steps" open=false >}}
+1. Listen to the provided audio to find something identifying; since most of it is hard to hear, I went with the "Mayday 976" call
+2. Google "Mayday 976" and the [first YouTube result](https://www.youtube.com/watch?v=8L5zKvAGjH0) contains the same audio, but also has the tail number
+![Mayday Video Frame](001_the_distress_call.png)
 {{< /admonition >}}
 
 {{< admonition type=tip title="Thought Process/Retrospect" open=false >}}
+My first time getting first blood on a challenge, but I found it surprisingly simple. I think this one ended up being pretty reliant on the Google search, but that required being able to discern something useful from the very rough audio.
 {{< /admonition >}}
 
 {{< admonition type=warning title="Flag" open=false >}}
-hpCTF{}
+hpCTF{N3808H}
 {{< /admonition >}}
 
 ---
 
 ### The Distress Call - 2
 ---
+>Can you also find the departure airport?
+
+We've been asked to find the latitude and longitude of the departure airport for the flight we located in the previous challenge.
 
 {{< admonition type=abstract title="Steps" open=false >}}
+1. It just so happens that the video we found in the last challenge names the departure airport in the description, "took off from Los Americas International Airport in Santo Domingo, Dominican Republic"
+2. Locate this airport on Google maps to get the latitude/longitude
+![Airport on Google Maps](001_the_distress_call_2.png)
 {{< /admonition >}}
 
 {{< admonition type=tip title="Thought Process/Retrospect" open=false >}}
+Another more "proper" way this challenge could be completed is by searching the tail number, which would let you find the [flight information](https://asn.flightsafety.org/wikibase/9407) and therefore the departure airport. 
+
+Turns out there was an easier way out for this one though ;)
 {{< /admonition >}}
 
 {{< admonition type=warning title="Flag" open=false >}}
-hpCTF{}
+hpCTF{18.429072681791887, -69.6710365711636}
 {{< /admonition >}}
 
 ---
@@ -452,60 +468,85 @@ hpCTF{}
 
 ### I Like Trains
 ---
+>What classification code is written on the side of that train?
+>
+>Flag Format: hpCTF{* *** * ****}
+>
+>Challenge Image:![I Like Trains](001_i_like_trains.png)
 
 {{< admonition type=abstract title="Steps" open=false >}}
-{{< /admonition >}}
-
-{{< admonition type=tip title="Thought Process/Retrospect" open=false >}}
+1. Google reverse image searching the provided image brings us to a YouTube channel with this video: https://www.youtube.com/watch?v=kqp9uFIQtMM
+2. Video description mentions the type of train, "1910 rotary snowplow", which we can use for some Google to find the classification code
 {{< /admonition >}}
 
 {{< admonition type=warning title="Flag" open=false >}}
-hpCTF{}
+hpCTF{X Rot D 9213}
 {{< /admonition >}}
 
 ---
 
 ### Friday 13
 ---
+>What a legend in the world of horror movies.
+>
+>Are you able to find his phone number?
+>
+>Flag Format: hpCTF{+* ***-***-****}
+
+Unfortunately I will not be including the image nor the flag for this challenge, as I would like to avoid including PII for real people in my writeups.
 
 {{< admonition type=abstract title="Steps" open=false >}}
-{{< /admonition >}}
-
-{{< admonition type=tip title="Thought Process/Retrospect" open=false >}}
-{{< /admonition >}}
-
-{{< admonition type=warning title="Flag" open=false >}}
-hpCTF{}
+1. Reverse image search the provided challenge image to figure out who we are looking for
+2. Search the challenge target's name in a data aggregator to find their phone number
 {{< /admonition >}}
 
 ---
 
 ### Friday 14
 ---
+> Can you also find his email (related to his role)?
+>
+> Flag Format: hpCTF{\<email\>}
 
-{{< admonition type=abstract title="Steps" open=false >}}
-{{< /admonition >}}
-
-{{< admonition type=tip title="Thought Process/Retrospect" open=false >}}
-{{< /admonition >}}
-
-{{< admonition type=warning title="Flag" open=false >}}
-hpCTF{}
-{{< /admonition >}}
+Once again I will not be including the result of this challenge, but it was simply searching through data for the correct email which was *very clearly* related to the role we previously discovered.
 
 ---
 
 ### The Misunderstanding
 ---
+>Listen closely, the place you're looking for will be in German.
+>
+>Flag Format: hpCTF{**** ***********}
+>
+>[Challenge File](listen.mkv)
+
+Another challenge that I was unfortunately not able to solve in time, sometimes previous failures can misguide our future actions...
 
 {{< admonition type=abstract title="Steps" open=false >}}
+1. Exfiltrate data from the included audio file and analyze it (`exiftool listen.mkv`), we find that there are two audio tracks
+2. Check both audio tracks separately (you can use mpv or other tools like VLC for this purpose), track 2 seems to contain morse code
+3. Translating the coordinates from morse code, we find `47.3498256, 8.4896817`
+4. Punch in the coordinates on Google maps to find our location
 {{< /admonition >}}
 
 {{< admonition type=tip title="Thought Process/Retrospect" open=false >}}
+One of my more frustraing failures of this CTF, I unfortunately burned myself on a previous challenge failure and completely overlooked one of the more obvious methods to try.
+
+First thing I did was listen to the audio - no issue so far, but it definitely sounds familiar. I looked up some what I could hear in the audio and found that it was from the *War of the Worlds* audio, but what could that have to do with the clue?
+
+At this point, since the clue said *listen closely*, I decided to try taking that literally and listening for any words that could be interpreted in German to have a different meaning. No luck there.
+
+Next I tried translating the script to German, maybe something would translate to the place we are looking for? Once again, no luck.
+
+I went over this quite a while, digging through some more rabbit holes, but eventually decided to shelve it.
+
+Unfortunately, earlier on in the CTF, I tried using exfiltration on the PNG for Peekabo to no avail, which I think is what led me to not even consider doing it on this seemingly clearly unrelated audio file (with some odd noise in the background).
+
+Lesson learned: Each challenge is separate, consider them as such and do not let previous failures inhibit ideas for future challenges.
 {{< /admonition >}}
 
 {{< admonition type=warning title="Flag" open=false >}}
-hpCTF{}
+hpCTF{Mars Planetenweg}
 {{< /admonition >}}
 
 ---
@@ -542,45 +583,83 @@ hpCTF{}
 
 ### Twin Sister
 ---
+> A ship went down in early 1900, killing 1500. It had two siblings, and one had a tragic accident as well. Can you locate where the sister ship rests today?
+
+We're being asked to find where the sister ship of a ship with the given details lies today, let's see how we can do it.
 
 {{< admonition type=abstract title="Steps" open=false >}}
-{{< /admonition >}}
-
-{{< admonition type=tip title="Thought Process/Retrospect" open=false >}}
+1. Based on the details we were given, the ship that went down sure soudns like the Titanic, but since we're looking for the sister ship let's confirm with a search
+![Titanic Sister Ships Search](001_twin_sister.png)
+2. It appears we were correct and, according to our search, the sister ship that went down is the HMHS Britannic - now we can use Google maps to find where the wreckage is located
+![HMHS Britannic Location Map](001_twin_sister.png)
 {{< /admonition >}}
 
 {{< admonition type=warning title="Flag" open=false >}}
-hpCTF{}
+hpCTF{37.70231908754482, 24.283473499999996}
 {{< /admonition >}}
 
 ---
 
 ### Follow The Money
 ---
+>a11ab03eeb08f4914bc6d7421dca96ebd6c96ff1c9b3e028d3a268cf44c21aff 
+>
+>Flag Format: {\<programming_language\>}
+>
+>Challenge Image: ![Follow the Money](001_follow_the_money.png)
+
+Here's to Google lens for easy (relatively good) text translation.
 
 {{< admonition type=abstract title="Steps" open=false >}}
+1. Translate the text using your preferred method to find that it says something about a donation being made to a software development studio
+2. Knowing this, we can make the assumption that the challenge description string is a bitcoin transaction hash, which we can search on blockchain to find one [transaction](https://www.blockchain.com/explorer/transactions/btc/a11ab03eeb08f4914bc6d7421dca96ebd6c96ff1c9b3e028d3a268cf44c21aff)
+3. Funds have been sent to two accounts: `3EYyfuqH7zMPUJYymbNsLjYBG2pxGjgjDe` and `18kj9UWRZC9YxZMoN2iz2A8Xmwqxxdyp8X`
+4. Google searching both of the addresses doesn't seem to return much for the first one, but the second one appears to have a GitHub account associated with it:
+![BTC Address Google Search](002_follow_the_money.png)
+5. We can now check the associated GitHub repository (for the "flacon" app) to find their least used language:
+![Flacon GitHub](003_follow_the_money.png)
 {{< /admonition >}}
 
 {{< admonition type=tip title="Thought Process/Retrospect" open=false >}}
+I enjoyed this challenge - it introduced me to some concepts in blockchain transaction history searching and was quite fun to solve on the spot.
 {{< /admonition >}}
 
 {{< admonition type=warning title="Flag" open=false >}}
-hpCTF{}
+hpCTF{Roff}
 {{< /admonition >}}
 
 ---
 
 ### The Halloween Party
 ---
+>There is a flag in this room. I guess you know what to do...
+>
+>Flag Format: htpCTF{\<flag\>}
+>
+>Challenge Image: ![The Halloween Party](001_the_halloween_party.png)
+
+Now where could that flag be hiding...?
 
 {{< admonition type=abstract title="Steps" open=false >}}
+1. Reconstruct the QR code in the image so that a scanner can read it (there are multiple methods of doing this)
+![Reconstructed QR Code](002_the_halloween_party.png)
+2. Scan the QR code to find the flag
 {{< /admonition >}}
 
 {{< admonition type=tip title="Thought Process/Retrospect" open=false >}}
+While straightforward on the surface, this challenge ended up proving to be rather time consuming. The challenge is exactly as it seems: figure out a way to get the QR code in the image to scan. How can we go about that though?
+
+At first, I tried editing the image - removing the red background, drawing the missing corner in, even doing some rotation, but I was unable to get it to scan (some were able to manage this, however).
+
+So, after quite some time spent trying to get the image to take from various different rotations/methods of drawing in the corner, I decided to reconstruct the QR code (as many others did), however I used what appeared to have been a rather unconventional method in Excel.
+
+I tried some of the QR code painting tools online, but found most of them annoying to use at best, so instead I did some good ole conditional formatting with nothing but 1s and blank cells.
+
+It worked, for what it's worth.
 {{< /admonition >}}
 
 {{< admonition type=warning title="Flag" open=false >}}
-hpCTF{}
+hpCTF{051N7_5W17Z3RL4ND_H4LL0W33N_CTF}
 {{< /admonition >}}
 
 ---
@@ -592,6 +671,7 @@ hpCTF{}
 {{< /admonition >}}
 
 {{< admonition type=tip title="Thought Process/Retrospect" open=false >}}
+I ended up trying to meta game this one far too much after having some trouble finding the location based on the plate. 
 {{< /admonition >}}
 
 {{< admonition type=warning title="Flag" open=false >}}
