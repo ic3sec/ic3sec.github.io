@@ -337,7 +337,7 @@ hpCTF{6003_Luzern_Sagenmattstrasse_7}
 >
 >Can you find out who was actually arrested here?
 >
->Flag Format: hpCTF{**** *** ***-*****}
+>Flag Format: hpCTF{**** *** \*\*\*-\*\*\*\*\*}
 >
 >Challenge Image: ![Fake News](001_fake_news.png)
 
@@ -421,47 +421,58 @@ hpCTF{18.429072681791887, -69.6710365711636}
 
 ---
 
-### The Forgotten Helter-Skelter
----
-
-{{< admonition type=abstract title="Steps" open=false >}}
-{{< /admonition >}}
-
-{{< admonition type=tip title="Thought Process/Retrospect" open=false >}}
-{{< /admonition >}}
-
-{{< admonition type=warning title="Flag" open=false >}}
-hpCTF{}
-{{< /admonition >}}
-
----
-
 ### The Pumpkin Ping
 ---
+>The Pumpkin King is trying to raise his army and we need to stop him! We have some of our agents tracking his location.
+>
+>Here are the protocols of our secret agents so far:
+>
+>- Agent-Location: 2681755,1249115 Reported: 6276.932 km
+>
+>- Agent-Location: 2832991,1202729 Reported: 6433.205 km
+>
+>- Agent-Location: 2722806,1076820 Reported: 6388.037 km
+>
+>Can you find where the Pumpkin king is currently located?
+>
+>Flag Format: hpCTF{**** ** *** **** * ********}
+
+To say I solved this one in an unintended manner would be an understatement, but at least the hosts plan on not giving such detailed flag formats next time.
 
 {{< admonition type=abstract title="Steps" open=false >}}
+1. Convert the given coordinates from Swiss LV format into GPS: https://www.swisstopo.admin.ch/en/coordinates-conversion-navref
+47.387790593, 8.521410226
+46.934750936, 10.499076890
+45.831896296, 9.019011855
+2. Check the intersections of the coordinates using them as center points of a circles with their given radius
+![Intersection Map](001_the_pumpkin_ping.png)
+3. Search for pumpkin festivals in the area to find one that fits the flag format and we're done
 {{< /admonition >}}
 
 {{< admonition type=tip title="Thought Process/Retrospect" open=false >}}
+I definitely did not solve this one in the intended manner, as I was completely lacking some of the knowledge required for that. I did not know these were Swiss LV coordinates that needed to be converted, nor did I know of the very useful mapping tool at https://geo.javawa.nl/coordcalc/index_en.html -- the former of which was absolutely required.
+
+First, I made the assumption that the locations we were given were actually just coordinates but without proper formatting (mistake \#1).
+
+Based on my incorrect assumption, I plugged the coordinates in as though they were starting points and radius coordinates for three circles to intersect using this tool (mistake \#2 - the converted coordinates would be, but the given coordinates were *not* in GPS format): https://www.mapdevelopers.com/draw-circle-tool.php
+
+Unfortunately for me, this did appear to give what seemed like a viable result of a [near intersection](https://www.mapdevelopers.com/draw-circle-tool.php?circles=%5B%5B16093.4%2C26.8039423%2C12.4904232%2C%22%2313AA6D%22%2C%22%232BFF6B%22%2C0%5D%2C%5B6433205%2C28.329911%2C12.027291%2C%22%23091EAA%22%2C%22%232B1CFF%22%2C0%5D%2C%5B6276932%2C26.817551%2C12.491151%2C%22%2311AA3F%22%2C%22%2319FF40%22%2C0%5D%2C%5B20000%2C26.3623894%2C9.8874213%2C%22%23AA0C0C%22%2C%22%23FF1919%22%2C0%5D%2C%5B20000%2C27.228061%2C10.768201%2C%22%23AA0C0C%22%2C%22%23FF1919%22%2C0%5D%2C%5B6388037%2C26.0198133%2C10.4339911%2C%22%23AA0C0C%22%2C%22%23FF1919%22%2C0%5D%5D) just off the coast of Madagascar.
+
+This led me down some Google searching, trying to figure out what Halloween-esque/pumpkin related festivals there are in Madigascar... which lasted quite some time and did not bring me much.
+
+So it was back to the drawing board, but this time I took a completely different approach.
+
+Maybe I could not solve this one in the intended manner, but I did manage to complete the challenge in time. Context clues can be extremely powerful and this case was no exception. We were given the format of the flag for this challenge in a way that told us there were exactly 6 words as well as their lengths. We also knew that we were looking for where the Pumpkin King would be trying to raise his army.
+
+All of this context in mind, I noticed that the last 3 words seemed to fit the length of "Jack o Lanterns" \- so now we have `**** ** *** Jack o Lanterns`, which I used for some Google dorking.
+
+I assumed the 2 and 3 letter words might be "of the", and searched "_ of the jack o lanterns" festival. Lo and behold, I found it - the RISE of the Jack o Lanterns.
+
+And just like that, the flag was found, with none of intended method used in the slightest.
 {{< /admonition >}}
 
 {{< admonition type=warning title="Flag" open=false >}}
-hpCTF{}
-{{< /admonition >}}
-
----
-
-### The Wiggler
----
-
-{{< admonition type=abstract title="Steps" open=false >}}
-{{< /admonition >}}
-
-{{< admonition type=tip title="Thought Process/Retrospect" open=false >}}
-{{< /admonition >}}
-
-{{< admonition type=warning title="Flag" open=false >}}
-hpCTF{}
+hpCTF{Rise of the Jack o Lanters}
 {{< /admonition >}}
 
 ---
@@ -553,30 +564,55 @@ hpCTF{Mars Planetenweg}
 
 ### Blair Witch Resident
 ---
+>Where was this picture taken?
+>
+>Challenge Image: ![Blair Witch Resident](001_blair_witch_resident.png)
+
+We can start from a couple different places here, but given an image a reverse search never hurts.
 
 {{< admonition type=abstract title="Steps" open=false >}}
-{{< /admonition >}}
-
-{{< admonition type=tip title="Thought Process/Retrospect" open=false >}}
+1. Reverse search the given image to find that it's from the Blair Witch Project (alternatively, make this assumption from the challenge name)
+2. Google dork for the house in the Blair Witch Project to find the (former) location of the home, as it has since been demolished
+![Griggs House Wikipedia Page](002_blair_witch_resident.png)
 {{< /admonition >}}
 
 {{< admonition type=warning title="Flag" open=false >}}
-hpCTF{}
+hpCTF{39.34549341656919, -76.85856241950255}
 {{< /admonition >}}
 
 ---
 
 ### Three Word Nightmare
 ---
+>Where still today pure evil is being kept and controlled for years, the nightmare started ages ago.
+>
+>When did the most famous resident of this place started spreading its nightmares? And who was the first victim?
+>
+>Flag Format: hpCTF{YYYY_\<name\>}
+>
+>[Challenge File](3W.mp3)
+
+Any challenge referencing three words gives us some initial direction that we can explore, but let's see how we can use that to figure out our famous resident and the victim in question.
 
 {{< admonition type=abstract title="Steps" open=false >}}
+1. Listen to the attached audio file, which seems to say three words: "Direction, Unwraps, Blacksmith"
+2. Given three words and the need to find a location, we can try plugging them into https://what3words.com
+![what3words Search](001_three_word_nightmare.png)
+3. We've landed at the Casa de los Warren, aka the Warren House/Warren Occult Museum, which is most famously the residence of the Annabelle doll, so a quick Google serach of the first victim of the Annabelle doll will give us our flag
 {{< /admonition >}}
 
 {{< admonition type=tip title="Thought Process/Retrospect" open=false >}}
+Another fun challenge, and much easier if you notice that there is an attachment. I initially went down a rabbit hole of trying to riddle out the clue and thought:
+1. "Spreading nightmares" and "pure evil" \-\> Nightmare on Elm Street
+2. First victim in Nightmare on Elm Street \-\> Tiny Gray in 1981
+
+Unfortunately, that was *completely* off base, turns out I started thinking like we were doing an escape room (though, in some regards, I suppose CTFs are similar).
+
+Lesson learned: make sure to read the entire challenge and double check for any attached resources.
 {{< /admonition >}}
 
 {{< admonition type=warning title="Flag" open=false >}}
-hpCTF{}
+hpCTF{1970_Donna}
 {{< /admonition >}}
 
 ---
@@ -606,7 +642,8 @@ hpCTF{37.70231908754482, 24.283473499999996}
 >
 >Flag Format: {\<programming_language\>}
 >
->Challenge Image: ![Follow the Money](001_follow_the_money.png)
+>Challenge Image: 
+>![Follow the Money](001_follow_the_money.png)
 
 Here's to Google lens for easy (relatively good) text translation.
 
@@ -660,22 +697,6 @@ It worked, for what it's worth.
 
 {{< admonition type=warning title="Flag" open=false >}}
 hpCTF{051N7_5W17Z3RL4ND_H4LL0W33N_CTF}
-{{< /admonition >}}
-
----
-
-### Follow The Car
----
-
-{{< admonition type=abstract title="Steps" open=false >}}
-{{< /admonition >}}
-
-{{< admonition type=tip title="Thought Process/Retrospect" open=false >}}
-I ended up trying to meta game this one far too much after having some trouble finding the location based on the plate. 
-{{< /admonition >}}
-
-{{< admonition type=warning title="Flag" open=false >}}
-hpCTF{}
 {{< /admonition >}}
 
 ---
