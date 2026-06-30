@@ -133,7 +133,6 @@ During my research on Swiss passport formats in the first part of this challenge
 {{< admonition type=abstract title="Steps" open=false >}}
 1. This question asks us specifically if the pictured passport belongs to the **man** in the image 
 2. Looking back at the passport, we can see that the character in the 8th position is an "F", which signifies that the owner of this passport is female and therefore not **his** passsport
-
 ![Passport Gender Character](001_my_identity_2.png)
 {{< /admonition >}}
 
@@ -206,11 +205,8 @@ Film locations are pretty likely to be publicly known information, but how can w
 {{< admonition type=abstract title="Steps" open=false >}}
 1. A quick Google search for "The Car 1997 film location" mentions a few spots, but the most mentioned appears to be Zion National Park, Utah
 2. Google searching for "tunnels at Zion National Park" and checking out Google maps lands us at the Zion-Mount Carmel Tunnel
-
 ![Zion-Mount Carmel Tunnel Map](001_dude_where_was_this_car.png)
-
 3. Going to street view on the marker conveniently places us at one of the tunnel entrances - and the images just so happen to be from April 2008 with a sign in sight
-
 ![Zion-Mount Carmel Tunnel Street View](002_dude_where_was_this_car.png)
 {{< /admonition >}}
 
@@ -311,7 +307,6 @@ Nothing jumps out in the image itself, but that doesn't mean the file isn't hidi
 ![Extracted Image](001_peekabo.png)
 3. Now that we have a barcode, we can put read it using an online tool e.g. https://online-barcode-reader.inliteresearch.com/
 4. This gives us `CHE-274.572.141` which definitely does not look like an address at first glance, but a quick Google search returns results that map it to our answer
-
 ![Address Search Result](002_peekabo.png)
 {{< /admonition >}}
 
@@ -483,7 +478,7 @@ hpCTF{Rise of the Jack o Lanters}
 >
 >Flag Format: hpCTF{* *** * ****}
 >
->Challenge Image:![I Like Trains](001_i_like_trains.png)
+>Challenge Image: ![I Like Trains](001_i_like_trains.png)
 
 {{< admonition type=abstract title="Steps" open=false >}}
 1. Google reverse image searching the provided image brings us to a YouTube channel with this video: https://www.youtube.com/watch?v=kqp9uFIQtMM
@@ -624,7 +619,7 @@ hpCTF{1970_Donna}
 We're being asked to find where the sister ship of a ship with the given details lies today, let's see how we can do it.
 
 {{< admonition type=abstract title="Steps" open=false >}}
-1. Based on the details we were given, the ship that went down sure soudns like the Titanic, but since we're looking for the sister ship let's confirm with a search
+1. Based on the details we were given, the ship that went down sure sounds like the Titanic, but since we're looking for the sister ship let's confirm with a search
 ![Titanic Sister Ships Search](001_twin_sister.png)
 2. It appears we were correct and, according to our search, the sister ship that went down is the HMHS Britannic - now we can use Google maps to find where the wreckage is located
 ![HMHS Britannic Location Map](001_twin_sister.png)
