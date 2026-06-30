@@ -543,13 +543,13 @@ Another challenge that I was unfortunately not able to solve in time, sometimes 
 {{< admonition type=tip title="Thought Process/Retrospect" open=false >}}
 One of my more frustraing failures of this CTF, I unfortunately burned myself on a previous challenge failure and completely overlooked one of the more obvious methods to try.
 
-First thing I did was listen to the audio - no issue so far, but it definitely sounds familiar. I looked up some what I could hear in the audio and found that it was from the *War of the Worlds* audio, but what could that have to do with the clue?
+First thing I did was listen to the audio - no issue so far, but it definitely sounded familiar. I looked up some what I could hear in the audio and found that it was from *War of the Worlds*, but what could that have to do with the clue?
 
 At this point, since the clue said *listen closely*, I decided to try taking that literally and listening for any words that could be interpreted in German to have a different meaning. No luck there.
 
 Next I tried translating the script to German, maybe something would translate to the place we are looking for? Once again, no luck.
 
-I went over this quite a while, digging through some more rabbit holes, but eventually decided to shelve it.
+I went over this for quite a while, going down some more rabbit holes, but eventually decided to shelve it.
 
 Unfortunately, earlier on in the CTF, I tried using exfiltration on the PNG for Peekabo to no avail, which I think is what led me to not even consider doing it on this seemingly clearly unrelated audio file (with some odd noise in the background).
 
