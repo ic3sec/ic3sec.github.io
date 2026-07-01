@@ -12,3 +12,4 @@ Tutor and freelance developer with an interest in DFIR/malware analysis.
 ## Qualifications
 * B.S. in Computer Science
 * 3+ years in IT and software development
+* CompTIA Security+ ce Certified
