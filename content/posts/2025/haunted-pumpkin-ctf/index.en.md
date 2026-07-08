@@ -13,13 +13,18 @@ categories: ["Writeups"]
 ---
 
 ## Overview
+---
 This was a fun OSINT CTF organized and hosted by the great team over at [OSINT Switzerland](https://osintswitzerland.ch/). Contestants were given 30 hours to complete a multitude of OSINT challenges and could sign up solo or with a partner.
 
 This was my first OSINT CTF and I found out about it last minute, so I went about it solo. I'll be covering my solutions, thought process and some retrospect on the challenges. There are plenty of spoilers ahead, but all the context you need for (most) challenges is at the start of their respective sections, so if you want to try them before looking at my solutions please do!
 
 **DISCLAIMER**: These challenges were made for educational purposes **only** and should not be used for malicious purposes.
 
+---
+
 ## Challenges
+---
+
 ### Introduction
 ---
 >Your entry flag, brave investigator, is the key into the Realm of the Pumpkin… 🎃🔑 🎃🎃🎃 hpCTF{Th4nk5_4_F0ll0w1ng_Th3_Ru135} 🎃🎃🎃

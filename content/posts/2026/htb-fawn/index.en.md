@@ -8,13 +8,13 @@ authorLink: ""
 description: "Writeup/Walkthrough for HTB Starting Point - Fawn"
 images: []
 
-tags: ["Writeup", "2026", "CTF", "HTB", "Hack the Box", "HTB - Starting Point", "Walkthrough", "ftp", "Linux", "nmap"]
+tags: ["Writeup", "2026", "CTF", "HTB", "Hack the Box", "HTB - Starting Point", "Walkthrough", "ftp", "Linux", "nmap", "HTB - Very Easy"]
 categories: ["Writeups", "CTF"]
 ---
 
 ## Overview
-
-Part of the "starting point"  boxes on HTB, Fawn has a set of tasks with questions that provide a framework to step through the machine. Fawn focuses on an simple ftp server that has anonymous login enabled.
+---
+Part of the "starting point"  boxes on HTB, Fawn has a set of tasks with questions that provide a framework to step through the machine. Fawn focuses on an simple ftp server that has anonymous login enabled. As this machine is part of the "starting point" category, many of the tasks are fundamental knowledge questions - I highly recommend reading into them a bit if you do not know the answer instead of copy/pasting.
 
 |                  |               |
 | ---------------- | ------------- |
@@ -23,11 +23,14 @@ Part of the "starting point"  boxes on HTB, Fawn has a set of tasks with questio
 | **OS**           | Linux         |
 | **Creator(s)**   | HTB-Bot       |
 
+---
+
 ## Tasks
 
-As this machine is part of the "starting point" category, many of the tasks are fundamental knowledge questions - I highly recommend reading into them a bit if you do not know the answer instead of copy/pasting.
+---
 
 ### Task 1
+---
 {{< admonition type=question open=true >}}
 What does the 3-letter acronym FTP stand for?
 {{< /admonition >}}
@@ -36,7 +39,10 @@ What does the 3-letter acronym FTP stand for?
 File Transfer Protocol
 {{< /admonition >}}
 
+---
+
 ### Task 2
+---
 {{< admonition type=question open=true >}}
 Which port does the FTP service listen on usually?
 {{< /admonition >}}
@@ -45,7 +51,10 @@ Which port does the FTP service listen on usually?
 21
 {{< /admonition >}}
 
+---
+
 ### Task 3
+---
 {{< admonition type=question open=true >}}
 FTP sends data in the clear, without any encryption. What acronym is used for a later protocol designed to provide similar functionality to FTP but securely, as an extension of the SSH protocol?
 {{< /admonition >}}
@@ -54,7 +63,10 @@ FTP sends data in the clear, without any encryption. What acronym is used for a 
 SFTP
 {{< /admonition >}}
 
+---
+
 ### Task 4
+---
 {{< admonition type=question open=true >}}
 What is the command we can use to send an ICMP echo request to test our connection to the target?
 {{< /admonition >}}
@@ -63,7 +75,10 @@ What is the command we can use to send an ICMP echo request to test our connecti
 ping
 {{< /admonition >}}
 
+---
+
 ### Task 5
+---
 {{< admonition type=question open=true >}}
 From your scans, what version is FTP running on the target?
 {{< /admonition >}}
@@ -84,7 +99,10 @@ Service Info: OS: Unix
 vsftpd 3.0.3
 {{< /admonition >}}
 
+---
+
 ### Task 6
+---
 {{< admonition type=question open=true >}}
 From your scans, what OS type is running on the target?
 {{< /admonition >}}
@@ -93,7 +111,10 @@ From your scans, what OS type is running on the target?
 Unix
 {{< /admonition >}}
 
+---
+
 ### Task 7
+---
 {{< admonition type=question open=true >}}
 What is the command we need to run in order to display the 'ftp' client help menu?
 {{< /admonition >}}
@@ -104,7 +125,10 @@ As noted on the [ftp man page](https://linux.die.net/man/1/ftp) `?` is a synonym
 ftp -?
 {{< /admonition >}}
 
+---
+
 ### Task 8
+---
 {{< admonition type=question open=true >}}
 What is username that is used over FTP when you want to log in without having an account?
 {{< /admonition >}}
@@ -115,7 +139,10 @@ This one is not listed on the base ftp man page but instead on the [ftpd man mag
 anonymous
 {{< /admonition >}}
 
+---
+
 ### Task 9
+---
 {{< admonition type=question open=true >}}
 What is the response code we get for the FTP message 'Login successful'?
 {{< /admonition >}}
@@ -124,7 +151,10 @@ What is the response code we get for the FTP message 'Login successful'?
 230
 {{< /admonition >}}
 
+---
+
 ### Task 10
+---
 {{< admonition type=question open=true >}}
 There are a couple of commands we can use to list the files and directories available on the FTP server. One is dir. What is the other that is a common way to list files on a Linux system.
 {{< /admonition >}}
@@ -133,7 +163,10 @@ There are a couple of commands we can use to list the files and directories avai
 ls
 {{< /admonition >}}
 
+---
+
 ### Task 11
+---
 {{< admonition type=question open=true >}}
 What is the command used to download the file we found on the FTP server?
 {{< /admonition >}}
@@ -142,7 +175,10 @@ What is the command used to download the file we found on the FTP server?
 get
 {{< /admonition >}}
 
+---
+
 ### Submit Single Flag
+---
 Alright, the real meat and bones of this box - but really, the tasks before it establish all the knowledge that is needed to perform this task. If you were performing the task steps above on the target as it went, you should only be one step away from the answer, but here I'll walk through the few steps from the start.
 
 First, I need to install an `ftp` client, since I did not have a standard one installed: `sudo apt-get install ftp`
@@ -178,7 +214,12 @@ Finally, all that remains is so get the flag, so I can `cat flag.txt` and the bo
 035db21c881520061c53e0536e44f815
 {{< /admonition >}}
 
+---
+
 ## Closing Thoughts
+---
 Fawn is a great, very introductory box that provides a nice framework for learning about ftp, though many modern OSes will no longer have an ftp client installed (nor should they), as ftp is *generally* deprecated in favor of SFTP (and FTPS in some cases).
 
 That being said, it's still good foundational knowledge to have and - believe it or not - some unsecure ftp servers most definitely do exist in the wild. Wild.
+
+---
