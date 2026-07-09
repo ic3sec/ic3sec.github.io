@@ -5,7 +5,7 @@ date: '2026-07-08T21:02:14-07:00'
 draft: false
 author: "ic3sec"
 authorLink: ""
-description: "Writeup/Walkthrough for HTB Starting Point - Dancing"
+description: "Writeup/Walkthrough for HTB Starting Point - Redeemer"
 images: []
 
 tags: ["Writeup", "2026", "CTF", "HTB", "Hack the Box", "HTB Starting Point", "Walkthrough", "Redis", "redis-cli", "Linux", "nmap", "HTB Very Easy", "nc", "ncat"]
