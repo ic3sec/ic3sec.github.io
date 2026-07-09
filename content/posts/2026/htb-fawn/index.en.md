@@ -8,20 +8,20 @@ authorLink: ""
 description: "Writeup/Walkthrough for HTB Starting Point - Fawn"
 images: []
 
-tags: ["Writeup", "2026", "CTF", "HTB", "Hack the Box", "HTB - Starting Point", "Walkthrough", "ftp", "Linux", "nmap", "HTB - Very Easy"]
+tags: ["Writeup", "2026", "CTF", "HTB", "Hack the Box", "HTB Starting Point", "Walkthrough", "ftp", "Linux", "nmap", "HTB Very Easy"]
 categories: ["Writeups", "CTF"]
 ---
 
 ## Overview
 ---
-Part of the "starting point"  boxes on HTB, Fawn has a set of tasks with questions that provide a framework to step through the machine. Fawn focuses on an simple ftp server that has anonymous login enabled. As this machine is part of the "starting point" category, many of the tasks are fundamental knowledge questions - I highly recommend reading into them a bit if you do not know the answer instead of copy/pasting.
+Part of the "starting point"  boxes on HTB, Fawn has a set of tasks with questions that provide a framework to step through the machine. Fawn focuses on an simple ftp server that has anonymous login enabled. As this machine is part of the "starting point" category, many of the tasks are fundamental knowledge questions - I highly recommend researching them a bit if you do not know the answer instead of copy/pasting.
 
 |                  |               |
 | ---------------- | ------------- |
 | **Release Date** | 30 Sept, 2021 |
 | **Difficulty**   | Very Easy     |
 | **OS**           | Linux         |
-| **Creator(s)**   | HTB-Bot       |
+| **Creator(s)**   | [HTB-Bot](https://app.hackthebox.com/users/16)       |
 
 ---
 

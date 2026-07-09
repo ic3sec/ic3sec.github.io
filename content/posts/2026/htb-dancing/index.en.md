@@ -8,20 +8,20 @@ authorLink: ""
 description: "Writeup/Walkthrough for HTB Starting Point - Dancing"
 images: []
 
-tags: ["Writeup", "2026", "CTF", "HTB", "Hack the Box", "HTB - Starting Point", "Walkthrough", "SMB", "smbclient", "Windows", "nmap", "HTB - Very Easy"]
+tags: ["Writeup", "2026", "CTF", "HTB", "Hack the Box", "HTB Starting Point", "Walkthrough", "SMB", "smbclient", "Windows", "nmap", "HTB Very Easy"]
 categories: ["Writeups", "CTF"]
 ---
 
 ## Overview
 ---
-Part of the "starting point"  boxes on HTB, Dancing has a set of tasks with questions that provide a framework to walk through the machine. Dancing focuses on an open SMB share that we can grab the files of anonymously. As this machine is part of the “starting point” category, many of the tasks are fundamental knowledge questions - I highly recommend reading into them a bit if you do not know the answer instead of copy/pasting.
+Part of the "starting point"  boxes on HTB, Dancing has a set of tasks with questions that provide a framework to walk through the machine. Dancing focuses on an open SMB share that we can grab the files of anonymously. As this machine is part of the “starting point” category, many of the tasks are fundamental knowledge questions - I highly recommend researching them a bit if you do not know the answer instead of copy/pasting.
 
 |                  |               |
 | ---------------- | ------------- |
 | **Release Date** | 30 Sept, 2021 |
 | **Difficulty**   | Very Easy     |
 | **OS**           | Windows       |
-| **Creator(s)**   | HTB-Bot       |
+| **Creator(s)**   | [HTB-Bot](https://app.hackthebox.com/users/16)       |
 
 ---
 
