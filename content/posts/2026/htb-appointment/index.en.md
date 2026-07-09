@@ -177,7 +177,7 @@ I know there is an Apache server running on port 80 from the earlier nmap scan, 
 
 Since the question mentions logging in as admin without knowing the password and this module is about SQL injection, it's safe to assume where this is going next. Let's take a look at how the SQL query in the background may be constructed. Let's say, for a successful login, the server needs to find a result in the database that matches both the username and password input. That query could look something like this:
 
-```mysql
+```mysql {title="MySQL"}
 SELECT * FROM users WHERE username = '<input_username>' AND password = '<input_password>' AND <other conditions>
 ```
 
@@ -190,7 +190,7 @@ Combining these concepts, we can try to construct a simple SQL injection attack:
 **Password:** `' OR 1=1 #`
 
 Again, assuming raw input and the above query example, the backend would now evaluate the following query:
-```mysql
+```mysql {title="MySQL"}
 SELECT * FROM users WHERE username = 'admin' AND password = '' OR 1=1 #AND <other conditions>
 ```
 
