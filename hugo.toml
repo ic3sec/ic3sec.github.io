@@ -89,6 +89,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 	
   # Code block config
   [params.code]
+	# whether to show the copy button of the code block
+    copy = true
 	# default max lines shown
     maxShownLines = 500
 	# line numbers shown/hidden (default = false)
