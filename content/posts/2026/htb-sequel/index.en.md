@@ -37,8 +37,7 @@ During our scan, which port do we find serving MySQL?
 
 Performing a quick port scan shows one open port with MySQL running on it:
 ```bash
-┌─[ice@parrot]─[~/Sequel]
-└──╼ $nmap -p- --reason --min-rate 5000 10.129.95.232
+[ice@parrot]─[~/Sequel]$ nmap -p- --reason --min-rate 5000 10.129.95.232
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-07-10 00:12 EDT
 Nmap scan report for 10.129.95.232
 Host is up, received echo-reply ttl 63 (0.073s latency).
@@ -63,8 +62,7 @@ What community-developed MySQL version is the target running?
 
 Now that the port is known for the MySQL server I can run another scan specifically on that port to get more details, including the MySQL community version that this target is running:
 ```bash
-┌─[✗]─[ice@parrot]─[~/Sequel]
-└──╼ $nmap -p 3306 -sC 10.129.95.232
+[ice@parrot]─[~/Sequel]$ nmap -p 3306 -sC 10.129.95.232
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-07-10 00:17 EDT
 Host is up (0.076s latency).
 
