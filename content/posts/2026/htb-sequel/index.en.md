@@ -204,7 +204,7 @@ Which table has a column named "flag"?
 {{< /admonition >}}
 
 I started by checking what tables we have available in this `htb` database:
-```
+```mysql {title="MySQL"}
 MariaDB [htb]> SHOW TABLES;
 +---------------+
 | Tables_in_htb |
@@ -217,7 +217,7 @@ MariaDB [htb]> SHOW TABLES;
 
 Now I can use the command from earlier, `DESCRIBE`, to see what columns are contained in each table.
 
-```
+```mysql {title="MySQL"}
 MariaDB [htb]> DESCRIBE users;
 +----------+---------------------+------+-----+---------+----------------+
 | Field    | Type                | Null | Key | Default | Extra          |
@@ -240,7 +240,7 @@ MariaDB [htb]> DESCRIBE config;
 ```
 
 Interestingly, there is no *column* named flag in either of these tables. I figured this was a mistake on the part of the question and checked by looking at the contents of each table:
-```
+```mysql {title="MySQL"}
 MariaDB [htb]> SELECT * FROM users;
 +----+----------+------------------+
 | id | username | email            |
