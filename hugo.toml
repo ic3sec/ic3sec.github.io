@@ -86,6 +86,13 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     name = "ic3sec"
     email = ""
     link = "https://github.com/ic3sec/"
+	
+  # Code block config
+  [params.code]
+	# default max lines shown
+    maxShownLines = 500
+	# line numbers shown/hidden (default = false)
+	showLineNos = false
 
   # Header config
   [params.header]
@@ -237,13 +244,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     Threads = ""
     Email = ""
     RSS = ""
-	
-  # Code block config
-  [params.code]
-	# default max lines shown
-    maxShownLines = 500
-	# line numbers shown/hidden (default = false)
-	showLineNos = false
 
   # Page global config
   [params.page]
