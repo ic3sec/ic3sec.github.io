@@ -128,14 +128,14 @@ INFO
 What is the version of the Redis server being used on the target machine?
 {{< /admonition >}}
 
-I started by connecting to the redis server using `nc`:
+We can start by connecting to the redis server using `nc`:
 ```bash
 [ice@parrot]─[~/Redeemer]$ nc -v 10.129.132.119 6379
 10.129.132.119: inverse host lookup failed: Unknown host
 (UNKNOWN) [10.129.132.119] 6379 (redis) open
 ```
 
-Then running 'info' to figure out the redis version:
+Then we can run 'info' to figure out the redis version:
 ```bash
 info 
 $3289         

@@ -83,7 +83,7 @@ ping
 From your scans, what version is FTP running on the target?
 {{< /admonition >}}
 
-Since this box is specifically asking about FTP and mentions the default port, I can run a very quick and simple nmap scan to check this, using the -sV flag to probe the service/version info:
+Since this box is specifically asking about FTP and mentions the default port, we can run a very quick and simple nmap scan to check this, using the -sV flag to probe the service/version info:
 ```bash
 [ice@parrot]─[~/Fawn]$ nmap -sV -p 21 10.129.129.145
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-07-08 03:41 EDT
@@ -183,7 +183,7 @@ Alright, the real meat and bones of this box - but really, the tasks before it e
 
 First, I need to install an `ftp` client, since I did not have a standard one installed: `sudo apt-get install ftp`
 
-Next, since the steps mentioned anonymous login, I can try connecting an ftp client to the target, providing "anonymous" as the username and nothing for the password (which, conveniently, does also show the "Login successful" response code, among a couple others):
+Next, since the steps mentioned anonymous login, we can try connecting an ftp client to the target, providing "anonymous" as the username and nothing for the password (which, conveniently, does also show the "Login successful" response code, among a couple others):
 ```bash
 [ice@parrot]─[~/Fawn]$ ftp 10.129.129.145
 Connected to 10.129.129.145.
@@ -197,7 +197,7 @@ Using binary mode to transfer files.
 ftp> 
 ```
 
-Now I can use that directory listing command from earlier to see available files:
+Now we can use that directory listing command from earlier to see available files:
 ```bash
 ftp> ls
 229 Entering Extended Passive Mode (|||36305|)
@@ -206,9 +206,9 @@ ftp> ls
 226 Directory send OK.
 ```
 
-And then grab `flag.txt` using `get flag.txt`, after which I can close my ftp connection using `exit`.
+And then grab `flag.txt` using `get flag.txt`, after which we can close our ftp connection using `exit`.
 
-Finally, all that remains is so get the flag, so I can `cat flag.txt` and the box has been solved! 
+Finally, all that remains is so get the flag, so we can `cat flag.txt` and the box has been solved! 
 
 {{< admonition type=warning title=Flag open=false >}}
 035db21c881520061c53e0536e44f815

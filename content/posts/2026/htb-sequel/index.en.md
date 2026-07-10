@@ -60,7 +60,7 @@ Nmap done: 1 IP address (1 host up) scanned in 14.76 seconds
 What community-developed MySQL version is the target running?
 {{< /admonition >}}
 
-Now that the port is known for the MySQL server I can run another scan specifically on that port to get more details, including the MySQL community version that this target is running:
+Now that the port is known for the MySQL server we can run another scan specifically on that port to get more details, including the MySQL community version that this target is running:
 ```bash
 [ice@parrot]─[~/Sequel]$ nmap -p 3306 -sC 10.129.95.232
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-07-10 00:17 EDT
@@ -111,7 +111,7 @@ This flag can be found on the [mysql man page](https://linux.die.net/man/1/mysql
 Which username allows us to log into this MariaDB instance without providing a password?
 {{< /admonition >}}
 
-Honestly, I just tried a few basic usernames and found this one quite quickly. In order to try connecting without a password simply use: `mysql -u <username> -h <ip_address>`
+Honestly, I just tried a few basic usernames and found this one quite quickly. In order to try connecting without a password we can simply use: `mysql -u <username> -h <ip_address>`
 
 {{< admonition type=warning title=Answer open=false >}}
 root
@@ -201,7 +201,7 @@ DESCRIBE
 Which table has a column named "flag"?
 {{< /admonition >}}
 
-I started by checking what tables we have available in this `htb` database:
+We can start by checking what tables we have available in this `htb` database:
 ```mysql {title="MySQL"}
 MariaDB [htb]> SHOW TABLES;
 +---------------+
@@ -213,7 +213,7 @@ MariaDB [htb]> SHOW TABLES;
 2 rows in set (0.076 sec)
 ```
 
-Now I can use the command from earlier, `DESCRIBE`, to see what columns are contained in each table.
+Now we can use the command from earlier, `DESCRIBE`, to see what columns are contained in each table.
 
 ```mysql {title="MySQL"}
 MariaDB [htb]> DESCRIBE users;

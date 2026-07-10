@@ -172,7 +172,7 @@ What single character can be used to comment out the rest of a line in MySQL?
 If user input is not handled carefully, it could be interpreted as a comment. Use a comment to login as admin without knowing the password. What is the first word on the webpage returned?
 {{< /admonition >}}
 
-I know there is an Apache server running on port 80 from the earlier nmap scan, here's what it looks like if I navigate to the page in a browser:
+We know there is an Apache server running on port 80 from the earlier nmap scan, here's what it looks like if we navigate to the page in a browser:
 ![Login Page](login_page.png)
 
 Since the question mentions logging in as admin without knowing the password and this module is about SQL injection, it's safe to assume where this is going next. Let's take a look at how the SQL query in the background may be constructed. Let's say, for a successful login, the server needs to find a result in the database that matches both the username and password input. That query could look something like this:

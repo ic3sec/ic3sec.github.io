@@ -59,7 +59,7 @@ What port does SMB use to operate at?
 What is the service name for port 445 that came up in our Nmap scan?
 {{< /admonition >}}
 
-As this box specifically mentions SMB on port 445, I can run a simple targeted nmap scan directly on that port to get a quick result:
+As this box specifically mentions SMB on port 445, we can run a simple targeted nmap scan directly on that port to get a quick result:
 ```bash
 [ice@parrot]─[~/Dancing]$ nmap -sV -p 445 10.129.129.200
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-07-08 05:43 EDT
@@ -96,7 +96,7 @@ As per the [smbclient man page](https://linux.die.net/man/1/smbclient) --list or
 How many shares are there on Dancing?
 {{< /admonition >}}
 
-I can run `smbclient` with the flag from the last task to get an answer to this by counting the listed shares:
+We can run `smbclient` with the flag from the last task to get an answer to this by counting the listed shares:
 ```bash
 [ice@parrot]─[~/Dancing]$ smbclient -L //10.129.129.200
 Password for [WORKGROUP\ice]:
@@ -148,7 +148,7 @@ get
 
 ### Submit Single Flag
 ---
-I know what share we need to look in since the tasks above brought us to the `WorkShares` share, using `ls` I can see what folders/files are available:
+We know what share we need to look in since the tasks above brought us to the `WorkShares` share, using `ls` we can see what folders/files are available:
 ```bash
 smb: \> ls
   .                                   D        0  Mon Mar 29 04:22:01 2021
@@ -178,7 +178,7 @@ Password for [WORKGROUP\ice]:
   flag.txt                            A       32  Mon Mar 29 05:26:57 2021
 ```
 
-And now that I know where `flag.txt` is, I can use my earlier smb client connection to `cd James.P\` and `get flag.txt` to pull it back to my machine, then exit the smbclient with `Ctrl+C` and `cat flag.txt` to finish up!
+And now that we know where `flag.txt` is, we can use our earlier smb client connection to `cd James.P\` and `get flag.txt` to pull it back to our machine, then exit the smbclient with `Ctrl+C` and `cat flag.txt` to finish up!
 
 {{< admonition type=warning title=Flag open=false >}}
 5f61c10dffbc77a704d76016a22f1664
