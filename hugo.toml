@@ -237,6 +237,13 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     Threads = ""
     Email = ""
     RSS = ""
+	
+  # Code block config
+  [params.code]
+	# default max lines shown
+    maxShownLines = 500
+	# line numbers shown/hidden (default = false)
+	showLineNos = false
 
   # Page global config
   [params.page]
@@ -264,10 +271,10 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     [params.page.code]
       # whether to show the copy button of the code block
       copy = true
-      # the maximum number of lines of displayed code by default
-      maxShownLines = 10000
+	  # the maximum number of lines of displayed code by default
+      maxShownLines = 500
 	  # line numbers shown/hidden (default = false)
-      showLineNos = true
+      showLineNos = false
       [params.page.code.render]
         goat = true
         mermaid = true
