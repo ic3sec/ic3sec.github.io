@@ -1,7 +1,7 @@
 ---
 weight: 4
 title: "HTB Starting Point - Sequel"
-date: '2026-07-09T21:10:01-37:00'
+date: '2026-07-09T21:10:01-07:00'
 draft: false
 author: "ic3sec"
 authorLink: ""

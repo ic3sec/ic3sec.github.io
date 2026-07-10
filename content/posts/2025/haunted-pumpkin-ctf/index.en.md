@@ -1,7 +1,7 @@
 ---
 weight: 4
 title: "Haunted Pumpkin CTF (2025)"
-date: 2025-11-05T07:28:00-00:00
+date: 2025-11-05T07:28:00-07:00
 draft: false
 author: "ic3sec"
 authorLink: ""
