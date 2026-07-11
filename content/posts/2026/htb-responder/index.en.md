@@ -304,6 +304,6 @@ ea81b7afddd03efaa0945333ed147fac
 
 ## Closing Thoughts
 ---
-
 Responder introduces concepts and tools at a high level, while letting the user explore some of the intricacies of those tools/concepts on their own, which is necessary to finish the machine. I think it hits an interesting spot between guidance and being slightly misleading, as some of the targetted task questions, which are generally all relevant to the box at hand, are instead somewhat "red herring" style (e.g. introducing LFI, when the box only needs RFI to be completed). However, I do not believe that is a bad thing necessarily. In fact, I think getting used to the idea that not everything you find, or believe you have found, will end up in root access is very important to learn early in order to not get discouraged later. Rabbit holes are a fact of life, and we must learn when to go down them and when to check other options in order to be most efficient with our time.
+
 ---
