@@ -18,10 +18,10 @@ Part of the "starting point"  boxes on HTB, Three has a set of tasks with questi
 
 |                  |               |
 | ---------------- | ------------- |
-| **Release Date** | 06 Apr, 2022  |
+| **Release Date** | 03 Aug, 2022  |
 | **Difficulty**   | Very Easy     |
-| **OS**           | Windows       |
-| **Created By**   | [TheCyberGeek](https://app.hackthebox.com/users/114053) |
+| **OS**           | Linux         |
+| **Created By**   | [kavigihan](https://app.hackthebox.com/users/389926) |
 
 ---
 
