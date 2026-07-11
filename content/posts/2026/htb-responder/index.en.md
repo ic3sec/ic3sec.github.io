@@ -66,6 +66,7 @@ Which scripting language is being used on the server to generate webpages?
 We can go a couple ways to figure this out, one of the easier ones to start with is hovering over/navigating to the various pages and seeing if the URL contains any artifacts of a scripting language via extension.
 
 In this case, not every page does, but if we change the page language it shows up in the URL:
+
 ![Webpage URL](001_webpage_url_french.png)
 
 {{< admonition type=warning title=Answer open=false >}}
@@ -173,6 +174,7 @@ Well well, where shall we start on this one? The last task mentions NetNTMLv2 cr
 We can start up responder using `sudo responder -I tun0` (interface will depend on your setup, use the one that represents your VPN connection if connecting over OpenVPN), which will start listening for events. 
 
 Now we can use some knowledge from earlier and attempt to grab a local (remote for the server) file from our machine (the file does not have to exist, replace `<responder IP>` with the IP of your responder session):
+
 ![Webpage RFI](002_webpage_RFI.png)
 
 And with that, we should see an event on our responder session, capturing the NTLM hash for the user:
